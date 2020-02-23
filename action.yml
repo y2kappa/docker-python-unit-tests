@@ -2,6 +2,7 @@ name: 'Docker Integration Tests Action'
 description: 'Get started with Container actions'
 author: 'GitHub'
 icon: alert-circle
+color: green
 inputs: 
   myInput:
     description: 'Input to use'
