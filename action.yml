@@ -1,6 +1,7 @@
 name: 'Docker Integration Tests Action'
 description: 'Get started with Container actions'
 author: 'GitHub'
+icon: box
 inputs: 
   myInput:
     description: 'Input to use'
