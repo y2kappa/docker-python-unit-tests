@@ -1,7 +1,13 @@
-FROM alpine:3.10
+FROM node:10
 
-COPY LICENSE README.md /
+WORKDIR /usr/src/app
 
-COPY entrypoint.sh /entrypoint.sh
+COPY package*.json ./
 
-ENTRYPOINT ["/entrypoint.sh"]
+RUN yarn
+
+COPY . .
+
+RUN chmod +x ./entrypoint.sh
+
+ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
